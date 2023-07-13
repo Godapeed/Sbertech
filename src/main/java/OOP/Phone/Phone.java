@@ -1,6 +1,7 @@
 package OOP.Phone;
 
 public class Phone {
+        String str;
         private final String number;
         private final String model;
         private String weight;
@@ -21,15 +22,17 @@ public class Phone {
         }
         public void receiveCall(String name) {
             System.out.println("Звонит: " + name);
+            str = name;
         }
         public String getNumber(){
             return this.number;
         }
         public void receiveCall(String name, String number){
-            return;
+            str = "call";
         }
         public void sendMessage(String[] numbers){
             for (String number: numbers){
+                str += number;
                 System.out.println(number);
             }
         }

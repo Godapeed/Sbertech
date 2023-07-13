@@ -7,6 +7,12 @@ public class Matrix {
     public void setValues(int i, int j, int value){
         this.matrix[i][j] = value;
     }
+    public int getValue(int i, int j){
+        return this.matrix[i][j];
+    }
+    public int[][] getMatrix(){
+        return this.matrix;
+    }
     Matrix(int nl, int nc, int[][] m){
         this.n_lines = nl;
         this.n_columns = nc;
